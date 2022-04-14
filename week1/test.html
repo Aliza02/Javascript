@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Win a car!! (Week 1 Exam)</title>
+
+<style>
+
+/* Basic CSS comment */
+
+body {
+
+background: #808080;
+
+color: whit;e
+
+width: 960px;
+
+margin: 0 auto;
+
+font-size: 30px;
+
+color: black;
+
+}
+
+h1 {
+
+font-size: 80px;
+
+color: #333 ;
+
+}
+
+</style>
+
+<script>
+
+//Alert comes out
+
+var username = prompt("Hello! Whats is your name?");
+
+// Car list
+
+var car = new Array("BMW", "Saab", "Maserati");
+
+//Car pics list
+
+var carPictures = new Array("BMW.jpg", "Saab.jpg", "Maserati.jpg");
+
+//Randomize cars
+
+var randomCar =Math.floor(Math.random()*car.length)
+
+if (username === "Kris" || username === "Chris") {
+
+document.write("<h1><strong>Hello " + username + "! You are the winner of new: " + car[randomCar] + "!</strong></h1>");
+
+document.write("<img src=\"" + carPictures[randomCar] +"\">");
+
+} else {
+
+document.write("<h1>Hello " + username + "!</h1>");
+
+}
+
+</script>
+
+</head>
+
+ 
+
+<body>
+
+<p><h2>Oprah is happy for you!!!</h2></p>
+
+<img src="Oprah.jpg" width="350" height="350">
+
+</body>
+
+</html>
