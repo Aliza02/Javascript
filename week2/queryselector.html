@@ -10,9 +10,16 @@
     <h1>Hey I am javascript</h1>
     <a href="#"> How are you feeling</a>
     <script>
-        var h1=document.querySelector("h1");
+       
+
+        var a=document.querySelector("a");
+        a.addEventListener('click',function(){
+            alert("We are inside the listener");
+
+            var h1=document.querySelector("h1");
         h1.innerHTML="I am Alive!";
         console.log(h1);
+        });
     </script>
 </body>
 </html>
